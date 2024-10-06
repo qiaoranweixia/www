@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 聊天助手</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <button id="theme-toggle" title="切换主题"><i class="fas fa-moon"></i></button>
+                <h1>AI 聊天助手</h1>
+                <div class="placeholder"></div>
+            </div>
+        </header>
+        <main>
+            <div id="chat-container">
+                <!-- 聊天消息将在这里动态添加 -->
+            </div>
+            <div id="input-container">
+                <textarea id="user-input" placeholder="在这里输入您的消息..."></textarea>
+                <button id="send-button" class="audio-ctrl-btn init">发送</button>
+                <button id="clear-button" title="清空聊天记录"><i class="fas fa-trash"></i></button>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-base64@3.7.2/base64.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
